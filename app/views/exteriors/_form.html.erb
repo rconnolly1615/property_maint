@@ -1,0 +1,33 @@
+<%= form_for(@exterior) do |f| %>
+  <% if @exterior.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@exterior.errors.count, "error") %> prohibited this exterior from being saved:</h2>
+
+      <ul>
+      <% @exterior.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gutters_cleaned %><br>
+    <%= f.datetime_select :gutters_cleaned %>
+  </div>
+  <div class="field">
+    <%= f.label :concrete_pressure_washed %><br>
+    <%= f.datetime_select :concrete_pressure_washed %>
+  </div>
+  <div class="field">
+    <%= f.label :paint_cond %><br>
+    <%= f.text_field :paint_cond %>
+  </div>
+  <div class="field">
+    <%= f.label :lawn_mowed %><br>
+    <%= f.text_field :lawn_mowed %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

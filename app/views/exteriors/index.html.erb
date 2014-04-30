@@ -1,0 +1,31 @@
+<h1>Listing exteriors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gutters cleaned</th>
+      <th>Concrete pressure washed</th>
+      <th>Paint condition</th>
+      <th>Lawn mowed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exteriors.each do |exterior| %>
+      <tr>
+        <td><%= exterior.gutters_cleaned %></td>
+        <td><%= exterior.concrete_pressure_washed %></td>
+        <td><%= exterior.paint_cond %></td>
+        <td><%= exterior.lawn_mowed %></td>
+        <td><%= link_to 'Show', exterior %></td>
+        <td><%= link_to 'Edit', edit_exterior_path(exterior) %></td>
+        <td><%= link_to 'Destroy', exterior, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exterior', new_exterior_path %>

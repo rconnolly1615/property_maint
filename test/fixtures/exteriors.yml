@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gutters_cleaned: 2014-04-30 10:58:22
+  concrete_pressure_washed: 2014-04-30 10:58:22
+  lawn_mowed: MyString
+
+two:
+  gutters_cleaned: 2014-04-30 10:58:22
+  concrete_pressure_washed: 2014-04-30 10:58:22
+  lawn_mowed: MyString

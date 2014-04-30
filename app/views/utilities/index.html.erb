@@ -1,0 +1,31 @@
+<h1>Listing utilities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Water bill paid</th>
+      <th>Seasonal gas on or off</th>
+      <th>Electric kwh used per month</th>
+      <th>Hvac serviced</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @utilities.each do |utility| %>
+      <tr>
+        <td><%= utility.water_bill_paid %></td>
+        <td><%= utility.seasonal_gas_on_or_off %></td>
+        <td><%= utility.kwh_per_mo %></td>
+        <td><%= utility.hvac_serviced %></td>
+        <td><%= link_to 'Show', utility %></td>
+        <td><%= link_to 'Edit', edit_utility_path(utility) %></td>
+        <td><%= link_to 'Destroy', utility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Utility', new_utility_path %>

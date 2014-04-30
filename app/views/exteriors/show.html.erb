@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gutters cleaned:</strong>
+  <%= @exterior.gutters_cleaned %>
+</p>
+
+<p>
+  <strong>Concrete pressure washed:</strong>
+  <%= @exterior.concrete_pressure_washed %>
+</p>
+<p>
+  <strong>Paint condition:</strong>
+  <%= @exterior.paint_cond %>
+</p>
+
+<p>
+  <strong>Lawn mowed:</strong>
+  <%= @exterior.lawn_mowed %>
+</p>
+
+<%= link_to 'Edit', edit_exterior_path(@exterior) %> |
+<%= link_to 'Back', exteriors_path %>

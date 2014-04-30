@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  water_bill_paid: MyString
+  seasonal_gas_on_or_off: MyString
+  hvac_serviced: 2014-04-30 10:59:34
+
+two:
+  water_bill_paid: MyString
+  seasonal_gas_on_or_off: MyString
+  hvac_serviced: 2014-04-30 10:59:34

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Water bill paid:</strong>
+  <%= @utility.water_bill_paid %>
+</p>
+
+<p>
+  <strong>Seasonal gas on or off:</strong>
+  <%= @utility.seasonal_gas_on_or_off %>
+</p>
+
+<p>
+  <strong>Electric kwh used per month:</strong>
+  <%= @utility.kwh_per_mo %>
+</p>
+
+<p>
+  <strong>Hvac serviced:</strong>
+  <%= @utility.hvac_serviced %>
+</p>
+
+<%= link_to 'Edit', edit_utility_path(@utility) %> |
+<%= link_to 'Back', utilities_path %>
